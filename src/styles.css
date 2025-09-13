@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Inter, system-ui, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background: #639192;
+  color: #111;
+  line-height: 1.5;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #1a1717;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3fc1c4;
+}
+.navlink {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #2e939e;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+.navlink:hover {
+  color: #979ca7;
+}
+
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  padding: 24px;
+  flex: 1;
+}
+.grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.left {
+  width: 360px;
+  flex-shrink: 0;
+}
+.right {
+  flex: 1;
+}
+
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #1c838b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #182b2c;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.actions button:first-child {
+  background: #3b82f6;
+  color: #fff;
+}
+.actions button:first-child:hover {
+  background: #2563eb;
+}
+.actions button:last-child {
+  background: #ef4444;
+  color: #fff;
+}
+.actions button:last-child:hover {
+  background: #dc2626;
+}
+
+
+.err {
+  color: #dc2626;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+
+.task-card .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.task-card strong {
+  font-size: 16px;
+  color: #111827;
+}
+.task-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+.task-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+
+.preview img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #d1d5db;
+}
+
+
+.notes-wrap {
+  display: flex;
+  gap: 20px;
+}
+.notes-list {
+  flex: 1;
+}
+.note-card .note-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.note-card small {
+  color: #6b7280;
+  font-size: 12px;
+}
